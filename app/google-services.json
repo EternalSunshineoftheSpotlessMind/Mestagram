@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "547011433172",
-    "project_id": "mobdeve-2023-fb3a6",
-    "storage_bucket": "mobdeve-2023-fb3a6.appspot.com"
+    "project_number": "384545406342",
+    "project_id": "mestagram-sarmiento",
+    "storage_bucket": "mestagram-sarmiento.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:547011433172:android:4451412a70c53a5e81a141",
+        "mobilesdk_app_id": "1:384545406342:android:e5731651d12217e31f4007",
         "android_client_info": {
           "package_name": "com.example.instagramsample"
         }
       },
       "oauth_client": [
         {
-          "client_id": "547011433172-g7dr4hbcocgq17vm7kmt1k81hmgdnsof.apps.googleusercontent.com",
+          "client_id": "384545406342-t1csnqpjoeqk3bpb3sqfaribtetfd7e2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCief7ut-KFMWeyaPl9L7Xpc_hbPHp1D1I"
+          "current_key": "AIzaSyCqM5a_d4-sef2yEfsQSPBx2jEqz8rOEI4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "547011433172-g7dr4hbcocgq17vm7kmt1k81hmgdnsof.apps.googleusercontent.com",
+              "client_id": "384545406342-t1csnqpjoeqk3bpb3sqfaribtetfd7e2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

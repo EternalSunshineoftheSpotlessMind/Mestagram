@@ -120,11 +120,33 @@
                 android:paddingRight="30px"
                 android:password="true"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/btn_register_register"
+                app:layout_constraintBottom_toTopOf="@+id/et_register_description"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/et_register_username"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/et_register_description"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="text"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:password="false"
+                android:textSize="16sp"
+                android:maxLength="150"
+                app:layout_constraintBottom_toTopOf="@+id/btn_register_register"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_register_password"
                 app:layout_constraintVertical_chainStyle="packed" />
 
             <Button
@@ -141,7 +163,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_register_password"
+                app:layout_constraintTop_toBottomOf="@+id/et_register_description"
                 app:layout_constraintVertical_chainStyle="packed" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

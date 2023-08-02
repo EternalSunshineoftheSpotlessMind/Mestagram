@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,6 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     private EditText CEmail;
     private EditText CPassword;
+    private Button buttonLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,21 @@ public class MainActivity extends AppCompatActivity {
 
         this.CEmail = this.findViewById(R.id.et_login_email);
         this.CPassword = this.findViewById(R.id.et_login_password);
+        this.buttonLogin = this.findViewById(R.id.btn_login_login);
+
+        this.buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email, password;
+
+                email = String.valueOf(CEmail.getText());
+                password = String.valueOf(CPassword.getText());
+
+                if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
+                    Toast.makeText(MainActivity.this, "Fill-up all fields.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     @Override
